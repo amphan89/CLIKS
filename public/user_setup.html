@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Anne Michelle Phan, Lavitor Matzembacker and Obi Alfred">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- title -->
+    <title>Cliks | User Setup</title>
+
+    <!-- icon -->
+    <link rel="icon" href="../assets/images/icon.png">
+</head>
+
+<body>
+
+    <!-- content -->
+    <style>
+        body {
+            margin: 25px;
+            padding-top: 75px;
+            background-image: url("/right_wp.png");
+            background-repeat: no-repeat;
+            background-position: right;
+            background-attachment: fixed;
+        }
+    </style>
+    </head>
+
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <!-- logo -->
+                <img src="" width="" height="" class="d-inline-block align-top" alt="" id="img-brand">
+                <strong><a class="navbar-brand" href="index.html">CLIKS</a></strong>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="user_setup.html">User setup
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mailto:support@cliks.com">Support</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Form/survey -->
+        <div class="container">
+            <h4><strong>Please answer to this short survey to help us build your profile:</strong></h4>
+            <br>
+
+            <!-- Name and email address -->
+            <form action='/user_setup' method='get'>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputName">
+                            <h6><strong>Name</strong></h6>
+                        </label>
+                        <input type="name" name='name' class="form-control" id="inputName" placeholder=""
+                            class="form-control" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail">
+                            <h6><strong>Email</strong></h6>
+                        </label>
+                        <input type="email" name='email' class="form-control" id="inputEmail" placeholder=""
+                            class="form-control" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail">
+                            <h6><strong>Password</strong></h6>
+                        </label>
+                        <input type="name" name='email' class="form-control" id="inputPassword" placeholder=""
+                            class="form-control" required>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputName">
+                            <h6><strong>Latest degree earned</strong></h6>
+                        </label>
+                        <input type="name" class="form-control" id="inputName" placeholder="" class="form-control"
+                            required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputName">
+                            <h6><strong>Field of study</strong></h6>
+                        </label>
+                        <input type="name" class="form-control" id="inputField" placeholder="" class="form-control"
+                            required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail">
+                            <h6><strong>Name of academic institution</strong></h6>
+                        </label>
+                        <input type="name" class="form-control" id="inputEmail" placeholder="" class="form-control"
+                            required>
+                    </div>
+                </div>
+
+                <!-- Activities and Societies -->
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputActivity">
+                            <h6><strong>Activities and Societies</strong></h6>
+                        </label>
+                        <input type="name" class="form-control" id="inputName" placeholder="e.g.: LinkedIn, GitHub."
+                            class="form-control" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputActivity2">
+                            <h6><strong>Other activities and Societies</strong></h6>
+                        </label>
+                        <input type="name" class="form-control" id="inputName" placeholder="" class="form-control"
+                            required>
+                    </div>
+                </div>
+
+                <!-- User's location -->
+                <h6><strong>Your location</strong></h6>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom03">City</label>
+                        <input type="text" class="form-control" id="validationCustom03" placeholder="" required>
+                        <div class="invalid-feedback">Please provide a valid city.</div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="validationCustom04">State</label>
+                        <input type="text" class="form-control" id="validationCustom04" placeholder="" required>
+                        <div class="invalid-feedback">Please provide a valid state.</div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="validationCustom05">Country</label>
+                        <input type="text" class="form-control" id="validationCustom05" placeholder="" required>
+                        <div class="invalid-feedback">Please provide a valid country.</div>
+                    </div>
+                </div>
+                <br>
+
+                <!-- 10 questions to generate best MATCHING-->
+                <p><strong>1. You're interested in technology.</strong></p>
+                <select class="chosen-select" id="1" name="select">
+                    <option label="Choose"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br><br>
+
+                <p><strong>2. You're passionate about working with other people.</strong></p>
+                <select class="chosen-select" id="2" name="select">
+                    <option label="Choose"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br><br>
+
+                <p><strong>3. Is what you are doing now what you always wanted to do growing up?</strong></p>
+                <select class="chosen-select" id="3" name="select">
+                    <option label="Choose"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br><br>
+
+                <p><strong>4. Choose a phrase that best defines you as a professional and your career path looking
+                        ahead:</strong></p>
+                <select class="chosen-select" id="4" name="select">
+                    <option label="Choose"></option>
+                    <option value="1">I'm a risk taker with a bias towards action.</option>
+                    <option value="2">I have a passion for learning and teamwork.</option>
+                    <option value="3">I'm driven by mission-oriented environments.</option>
+                    <option value="4">I'm looking forward to engage in a new meaningful project.</option>
+                    <option value="5">I just want to chill and enjoy life as I go.</option>
+                </select>
+                <br><br>
+
+                <p><strong>5. Your pragmatism defines your philosophy in life as <q>keep things simple</q>.</strong></p>
+                <select class="chosen-select" id="5" name="select">
+                    <option label="Choose"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br><br>
+
+                <p><strong>6. People can rarely upset you.</strong></p>
+                <select class="chosen-select" id="6" name="select">
+                    <option label="Choose"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br><br>
+
+                <p><strong>7. You believe that people need to maintain hobbies and you have one.</strong></p>
+                <select class="chosen-select" id="7" name="select">
+                    <option label="Choose"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br><br>
+
+                <p><strong>8. Have you ever dropped food on the floor and then picked it up and eat it?</strong></p>
+                <select class="chosen-select" id="8" name="select">
+                    <option label="Choose"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br><br>
+
+                <p><strong>9. Would you ever take a lie detector test with a loved one asking the questions?</strong>
+                </p>
+                <select class="chosen-select" id="9" name="select">
+                    <option label="Choose"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br><br>
+
+                <p><strong>10. Have you ever gone through a serious and stressful situation in life?</strong></p>
+                <select class="chosen-select" id="10" name="select">
+                    <option label="Choose"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br><br>
+
+                <!-- Latest coolest thing done -->
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="inputName">
+                            <h6><strong>What&#8217s the latest coolest thing you&#8217ve done?</strong></h6>
+                        </label>
+                        <input type="name" class="form-control" id="inputName" placeholder="" class="form-control">
+                    </div>
+                </div>
+
+                <br><br>
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-dark btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
+                        aria-hidden="true"></i>Submit</button>
+
+            </form>
+            <!-- Modal Content  -->
+
+
+            <!-- JavaScript for Submission Logic -->
+            <!-- <script>
+
+            // Global Variable Declaration (scoping fix)
+            var allFieldsCompleted;
+
+            $('document').ready(function () {
+
+                // Event Listener for Submission
+                $('#submitButton').on('click', function () {
+
+                    // Check if all the user fields are completed
+                    checkIfComplete(function () {
+
+                        // Proceed with AJAX call if all questions are answered
+                        if (allFieldsCompleted) {
+                            collectInputs();
+                        }
+                        else {
+                            alert('Please complete all fields before submitting!');
+                        }
+
+                    }); // end checkIfComplete() callback
+
+                }); // end submit listener
+
+            }); // document ready
+
+            // Function to valid user input
+            function checkIfComplete(callback) {
+
+                // Check through all the questions (i.e. iterate through all of class "chosen-select")
+                var questionsCompleted;
+                $('.chosen-select').each(function () {
+                    if ($(this).val() == "") {
+                        questionsCompleted = false;
+                    }
+                })
+
+                    // This counters the async behavior of $.each()
+                    .promise().done(function () {
+
+                        // Check if any questions are incomplete
+                        if (questionsCompleted == false) {
+                            allFieldsCompleted = false;
+                        }
+
+                        // Determine if Name is entered
+                        else if ($('#inputName').val().trim() == "") {
+                            allFieldsCompleted = false;
+                        }
+
+                        // Determine if Email is entered
+                        else if ($('#inputEmail').val().trim() == "") {
+                            allFieldsCompleted = false;
+                        }
+                        // Determine if Link is entered
+                        else if ($('#inputPassword').val().trim() == "") {
+                            allFieldsCompleted = false;
+                        }
+
+                        // Otherwise, the all fields are completed
+                        else {
+                            allFieldsCompleted = true;
+                        }
+
+                        // Fire Off Callback (to counter async behavior of $.each)
+                        callback();
+
+                    });
+            }
+
+            function collectInputs() {
+
+                // Make new match object
+                var newMatch = {
+                    user_name: $('#inputName').val().trim(),
+                    picture: $('#formImage').val().trim(),
+                    scores: []
+                };
+
+                // Loop through Questions to get scores
+                var scoresArray = [];
+                $('.chosen-select').each(function () {
+                    scoresArray.push(parseInt($(this).val())); // Parse Input Value as integer
+                })
+                    // This counters the async behavior of $.each()
+                    .promise().done(function () {
+
+                        // Push the array of scores to the new friend object
+                        newMatch.scores = scoresArray;
+
+                        // POST the newMatch to the users.js file and get back the best match
+                        var currentURL = window.location.origin;
+                        $.post(currentURL + "/api/users", newMatch, function (data) {
+
+                            // Add Best Match attributes to Modal
+                            $('#matchName').text(data.user_name);
+                            $('#matchImg').attr('src', data.picture);
+
+                            // Show the modal with the best match 
+                            $("#resultsModal").modal('toggle');
+
+                        }); // end AJAX POST
+                    });
+            }
+
+        </script> -->
+
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+    </body>
+
+</html>

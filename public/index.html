@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Anne Michelle Phan, Lavitor Matzembacker and Obi Alfred">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- title -->
+    <title>Cliks | index</title>
+
+    <!-- icon -->
+    <link rel="icon" href="../assets/images/icon.png">
+
+    <!-- custom styling -->
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .bg {
+            background-image: url("/index_page_bg_img.png");
+            height: 100%;
+            margin: 0%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .col-md-4 {
+            padding-top: 0px;
+        }
+
+        .container {
+            background: rgba(202, 220, 233, 0.6);
+            padding: 25px;
+        }
+
+        #logIn {
+            padding-top: 75px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- content -->
+    <div class="bg">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4" id="logIn">
+                <div class="container">
+                    <div id="loginBoxheader">
+                        <h3><strong>CLIKS</strong></h3>
+                    </div>
+                    <div id="loginSlogan">
+                        <h4><strong>Come together for a common goal.</strong></h4>
+                    </div>
+                    <form action='/auth/login' method='post'>
+                        <div class="form-group">
+                            <label for="user_name"><strong>Name:</strong></label>
+                            <input type="user_name" class="form-control" name='user_name' id="user_name" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd"><strong>Password:</strong></label>
+                            <input type="password" class="form-control" name='password' id="password" placeholder="">
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox"> Remember me</label>
+                        </div>
+                        <!-- Join button -->
+                        <button id="loginButton" type="submit" class="btn btn-md btn-primary btn-block">
+                            <h4><span class="glyphicon glyphicon-send"></span>Join</h4>
+                        </button>
+                        <br>
+                        <!-- Register -->
+                        <div id="registerNew">
+                            <h5><strong>New around here?</strong></h5>
+                        </div>
+                        <button id="submitButton" type="submit" class="btn btn-md btn-warning btn-block">
+                            <h4><span class="glyphicon glyphicon-send"></span>Register</h4>
+                        </button>
+                    </form>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <!-- jQuery, Popper.js, Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+            $('#submitButton').click(function () {
+                window.location.href = 'user_setup.html';
+                return false;
+            });
+
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "01-express-static",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie": "^0.4.0",
+    "cookie-parser": "^1.4.4",
+    "ejs": "^2.7.1",
+    "express": "^4.16.4",
+    "express-session": "^1.17.0",
+    "inquire": "^0.4.8",
+    "mysql": "^2.16.0",
+    "parser": "^0.1.4",
+    "sessions": "0.0.2-7",
+    "socket.io": "^2.3.0"
+  },
+  "description": ""
+}
