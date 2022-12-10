@@ -14,7 +14,7 @@
     "cookie": "^0.4.0",
     "cookie-parser": "^1.4.4",
     "ejs": "^2.7.1",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "express-session": "^1.17.0",
     "inquire": "^0.4.8",
     "mysql": "^2.16.0",
